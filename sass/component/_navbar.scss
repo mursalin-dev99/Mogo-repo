@@ -1,0 +1,60 @@
+/*============================================
+        navbar css part start here
+==============================================*/
+#nav_part{
+    width: 100%;
+    background: transparent;
+    // background: rgb(244,139,130);
+// background: linear-gradient(180deg, rgba(244,139,130,0.7511205165660014) 36%, rgba(252,226,137,1) 100%);
+    position: absolute;
+    z-index: 999999;
+    .nav_main{
+        .container{
+            a{
+                color: #fff;
+                font-size: 30px;
+                font-weight: 600;
+                font-family: 'Montserrat', sans-serif;
+            }
+            .collapse{
+                ul{
+                    li{
+                        padding-left: 15px;
+                        a{
+                            position: relative;
+                            color: #fff;
+                            font-size: 15px;
+                            font-weight: 600;
+                            font-family: 'Montserrat', sans-serif;
+                            text-transform: uppercase;
+                            &::after{
+                                position: absolute;
+                                content: '';
+                                bottom: 0;
+                                left: 0;
+                                height: 2px;
+                                width: 100%;
+                                background: #fff;
+                                transition-timing-function: ease-in-out;
+                                transition: .5s;
+                                transform: scaleX(0);
+                            }
+                        }
+                        &:hover{
+                            a{
+                                color: #fce289;
+                                &::after{
+                                    background: #fce289;
+                                    transform: scaleX(1);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*============================================
+        navbar css part ends here
+==============================================*/

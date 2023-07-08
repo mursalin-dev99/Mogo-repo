@@ -1,0 +1,51 @@
+/*============================================
+        counter Up css part start here
+==============================================*/
+#counter_part{
+    width: 100%;
+    background: #95e1d3;
+    height: 250px;
+    .counter_body{
+        .counter_main{
+            .row{
+                .col-lg-2{
+                    text-align: center;
+                    .cunt_number{
+                        padding: 60px 0;
+                        h1{
+                            color: #fff;
+                            font-size: 72px;
+                            font-family: 'Montserrat', sans-serif;
+                        }
+                        p{
+                            color: #fff;
+                            font-size: 15px;
+                            font-family: 'Montserrat', sans-serif;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+                .col-lg-3{
+                    text-align: center;
+                    .cunt_number{
+                        padding: 60px 0;
+                        h1{
+                            color: #fff;
+                            font-size: 72px;
+                            font-family: 'Montserrat', sans-serif;
+                        }
+                        p{
+                            color: #fff;
+                            font-size: 15px;
+                            font-family: 'Montserrat', sans-serif;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*============================================
+        counter Up css part ends here
+==============================================*/

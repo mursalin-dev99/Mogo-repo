@@ -1,0 +1,128 @@
+/*============================================
+        amazing css part start here
+==============================================*/
+#amazing_part{
+    width: 100%;
+    margin: 110px 0;
+    .amazing_body{
+        .section_head{
+            text-align: center;
+            h3{
+                color: #000;
+                font-size: 24px;
+                font-family: 'Kaushan Script', cursive;
+                font-weight: 600;
+                } 
+            h2{
+                color: #000;
+                font-size: 35px;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 600;
+                text-transform: uppercase;
+                position: relative;
+                &::after{
+                   position: absolute;
+                   content: '';
+                   top: 70px;
+                   left: 600px;
+                   height: 3px;
+                   width: 100px;
+                   background: #f38181;
+                }
+            } 
+        }
+        .amazing_item{
+            margin-top: 110px;
+            .amazing_item_body{
+                .row{
+                    padding-bottom: 40px;
+                    .col-lg-4{
+                        .card_body{
+                            cursor: pointer;
+                            display: flex;
+                            .item_img{
+                                i{
+                                    color: #95e1d3;
+                                    font-size: 30px;
+                                    padding-top: 6px;
+                                }
+                            }
+                            .item_details{
+                                padding-left: 15px;
+                                h3{
+                                    color: #333333;
+                                    font-size: 25px;
+                                    font-weight: 500;
+                                    font-family: 'Montserrat', sans-serif;
+                                    text-transform: uppercase;
+                                    padding-bottom: 15px;
+                                    margin-bottom: 0;
+                                }
+                                p{
+                                    color: #999999;
+                                    font-size: 15px;
+                                    font-weight: 400;
+                                    font-family: 'Montserrat', sans-serif;
+                                    margin-bottom: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .slider_body{
+            background: #f8f8f8;
+            width: 100%;
+            height: 300px;
+            margin-top: 80px;
+            .slider_main{
+                .slider_item{
+                    .slider_slide{
+                        display: flex;
+                        padding: 83px;
+                        .slider_icon{
+                            border: 2px solid #95e1d3;
+                            padding: 30px;
+                            i{
+                                color: #95e1d3;
+                                font-size: 70px;
+                            }
+                        }
+                        .slider_text{
+                            padding-left: 50px;
+                            p{
+                                color: #999999;
+                                font-size: 20px;
+                                font-family: 'Montserrat', sans-serif;
+                                font-style: italic;
+                                font-weight: 300;
+                                padding-top: 5px;
+                            }
+                            span{
+                                color: #000;
+                                font-size: 25px;
+                                font-family: 'Kaushan Script', cursive;
+                                font-weight: 500;
+                                margin-left: 70px;
+                                position: relative;
+                                &::after{
+                                    position: absolute;
+                                    content: "";
+                                    bottom: 15px;
+                                    right: 105px;
+                                    height: 2px;
+                                    width: 50px;
+                                    background-color: #f38181;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*============================================
+        amazing css part ends here
+==============================================*/

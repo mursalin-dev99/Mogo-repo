@@ -1,0 +1,424 @@
+/*============================================
+        common css part start here
+==============================================*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul, li, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.clr {
+  clear: both;
+}
+
+.container {
+  max-width: 1220px;
+}
+
+/*============================================
+        common css part ends here
+==============================================*/
+/*============================================
+        all typography css part start here
+==============================================*/
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+/*============================================
+        all typography css part ends here
+==============================================*/
+/*============================================
+        navbar css part start here
+==============================================*/
+#nav_part {
+  width: 100%;
+  background: transparent;
+  position: absolute;
+  z-index: 999999;
+}
+#nav_part .nav_main .container a {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+}
+#nav_part .nav_main .container .collapse ul li {
+  padding-left: 15px;
+}
+#nav_part .nav_main .container .collapse ul li a {
+  position: relative;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+#nav_part .nav_main .container .collapse ul li a::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: #fff;
+  transition-timing-function: ease-in-out;
+  transition: 0.5s;
+  transform: scaleX(0);
+}
+#nav_part .nav_main .container .collapse ul li:hover a {
+  color: #fce289;
+}
+#nav_part .nav_main .container .collapse ul li:hover a::after {
+  background: #fce289;
+  transform: scaleX(1);
+}
+
+/*============================================
+        navbar css part ends here
+==============================================*/
+/*============================================
+        banner css part start here
+==============================================*/
+#banner_part {
+  width: 100%;
+  position: relative;
+}
+#banner_part .banner_main {
+  background-image: url(../images/banner.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 800px;
+}
+#banner_part .banner_main .banner_overlay {
+  background: rgb(244, 139, 130);
+  background: linear-gradient(180deg, rgba(244, 139, 130, 0.6950981076) 52%, rgba(252, 226, 137, 0.6054622533) 93%);
+  height: 100%;
+}
+#banner_part .banner_main .banner_overlay .container .ban_details {
+  text-align: center;
+  padding: 230px 0;
+}
+#banner_part .banner_main .banner_overlay .container .ban_details .ban_text h1 {
+  color: #fff;
+  font-family: "Kaushan Script", cursive;
+  font-size: 52px;
+  font-weight: 600;
+  padding-bottom: 40px;
+}
+#banner_part .banner_main .banner_overlay .container .ban_details .ban_text h2 {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 100px;
+  font-weight: 600;
+  line-height: 5.5rem;
+  position: relative;
+}
+#banner_part .banner_main .banner_overlay .container .ban_details .ban_text h2::after {
+  position: absolute;
+  content: "";
+  bottom: -20px;
+  left: 598px;
+  height: 2px;
+  width: 100px;
+  background: white;
+}
+#banner_part .banner_main .banner_overlay .container .ban_details .ban_btn {
+  padding-top: 80px;
+}
+#banner_part .banner_main .banner_overlay .container .ban_details .ban_btn a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  border: 2px solid #fff;
+  padding: 10px 20px;
+}
+#banner_part .banner_main .banner_overlay .container .ban_details .ban_btn a:hover {
+  color: #e78282;
+  background: #fff;
+  transition-timing-function: ease-in-out;
+  transition: 0.5s;
+}
+
+/*============================================
+        banner css part ends here
+==============================================*/
+/*============================================
+        about css part start here
+==============================================*/
+#about_part {
+  width: 100%;
+  margin: 110px 0;
+}
+#about_part .about_main .about_body .section_head {
+  text-align: center;
+}
+#about_part .about_main .about_body .section_head h3 {
+  color: #000;
+  font-size: 24px;
+  font-family: "Kaushan Script", cursive;
+  font-weight: 600;
+}
+#about_part .about_main .about_body .section_head h2 {
+  color: #000;
+  font-size: 35px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative;
+}
+#about_part .about_main .about_body .section_head h2::after {
+  position: absolute;
+  content: "";
+  top: 70px;
+  left: 600px;
+  height: 3px;
+  width: 100px;
+  background: #f38181;
+}
+#about_part .about_main .about_body .about_details {
+  margin-top: 90px;
+  text-align: center;
+}
+#about_part .about_main .about_body .about_details p {
+  color: #999999;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5rem;
+}
+#about_part .about_main .about_body .about_card {
+  margin-top: 30px;
+}
+#about_part .about_main .about_body .about_card .card_body .row .col-lg-4 {
+  height: 260px;
+}
+#about_part .about_main .about_body .about_card .card_body .row .col-lg-4 .card {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#about_part .about_main .about_body .about_card .card_body .row .col-lg-4 .card img {
+  width: 100%;
+  height: 100%;
+}
+#about_part .about_main .about_body .about_card .card_body .row .col-lg-4 .card .card_ovelay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(244, 139, 130);
+  background: linear-gradient(180deg, rgba(244, 139, 130, 0.6950981076) 52%, rgba(252, 226, 137, 0.6054622533) 93%);
+  text-align: center;
+  opacity: 0;
+}
+#about_part .about_main .about_body .about_card .card_body .row .col-lg-4 .card .card_ovelay .card_item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#about_part .about_main .about_body .about_card .card_body .row .col-lg-4 .card .card_ovelay .card_item i {
+  color: #fff;
+  font-size: 25px;
+}
+#about_part .about_main .about_body .about_card .card_body .row .col-lg-4 .card .card_ovelay .card_item p {
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+#about_part .about_main .about_body .about_card .card_body .row .col-lg-4:hover .card_ovelay {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+/*============================================
+        about css part ends here
+==============================================*/
+/*============================================
+        counter Up css part start here
+==============================================*/
+#counter_part {
+  width: 100%;
+  background: #95e1d3;
+  height: 250px;
+}
+#counter_part .counter_body .counter_main .row .col-lg-2 {
+  text-align: center;
+}
+#counter_part .counter_body .counter_main .row .col-lg-2 .cunt_number {
+  padding: 60px 0;
+}
+#counter_part .counter_body .counter_main .row .col-lg-2 .cunt_number h1 {
+  color: #fff;
+  font-size: 72px;
+  font-family: "Montserrat", sans-serif;
+}
+#counter_part .counter_body .counter_main .row .col-lg-2 .cunt_number p {
+  color: #fff;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+#counter_part .counter_body .counter_main .row .col-lg-3 {
+  text-align: center;
+}
+#counter_part .counter_body .counter_main .row .col-lg-3 .cunt_number {
+  padding: 60px 0;
+}
+#counter_part .counter_body .counter_main .row .col-lg-3 .cunt_number h1 {
+  color: #fff;
+  font-size: 72px;
+  font-family: "Montserrat", sans-serif;
+}
+#counter_part .counter_body .counter_main .row .col-lg-3 .cunt_number p {
+  color: #fff;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+/*============================================
+        counter Up css part ends here
+==============================================*/
+/*============================================
+        amazing css part start here
+==============================================*/
+#amazing_part {
+  width: 100%;
+  margin: 110px 0;
+}
+#amazing_part .amazing_body .section_head {
+  text-align: center;
+}
+#amazing_part .amazing_body .section_head h3 {
+  color: #000;
+  font-size: 24px;
+  font-family: "Kaushan Script", cursive;
+  font-weight: 600;
+}
+#amazing_part .amazing_body .section_head h2 {
+  color: #000;
+  font-size: 35px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative;
+}
+#amazing_part .amazing_body .section_head h2::after {
+  position: absolute;
+  content: "";
+  top: 70px;
+  left: 600px;
+  height: 3px;
+  width: 100px;
+  background: #f38181;
+}
+#amazing_part .amazing_body .amazing_item {
+  margin-top: 110px;
+}
+#amazing_part .amazing_body .amazing_item .amazing_item_body .row {
+  padding-bottom: 40px;
+}
+#amazing_part .amazing_body .amazing_item .amazing_item_body .row .col-lg-4 .card_body {
+  cursor: pointer;
+  display: flex;
+}
+#amazing_part .amazing_body .amazing_item .amazing_item_body .row .col-lg-4 .card_body .item_img i {
+  color: #95e1d3;
+  font-size: 30px;
+  padding-top: 6px;
+}
+#amazing_part .amazing_body .amazing_item .amazing_item_body .row .col-lg-4 .card_body .item_details {
+  padding-left: 15px;
+}
+#amazing_part .amazing_body .amazing_item .amazing_item_body .row .col-lg-4 .card_body .item_details h3 {
+  color: #333333;
+  font-size: 25px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+  margin-bottom: 0;
+}
+#amazing_part .amazing_body .amazing_item .amazing_item_body .row .col-lg-4 .card_body .item_details p {
+  color: #999999;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 0;
+}
+#amazing_part .amazing_body .slider_body {
+  background: #f8f8f8;
+  width: 100%;
+  height: 300px;
+  margin-top: 80px;
+}
+#amazing_part .amazing_body .slider_body .slider_main .slider_item .slider_slide {
+  display: flex;
+  padding: 83px;
+}
+#amazing_part .amazing_body .slider_body .slider_main .slider_item .slider_slide .slider_icon {
+  border: 2px solid #95e1d3;
+  padding: 30px;
+}
+#amazing_part .amazing_body .slider_body .slider_main .slider_item .slider_slide .slider_icon i {
+  color: #95e1d3;
+  font-size: 70px;
+}
+#amazing_part .amazing_body .slider_body .slider_main .slider_item .slider_slide .slider_text {
+  padding-left: 50px;
+}
+#amazing_part .amazing_body .slider_body .slider_main .slider_item .slider_slide .slider_text p {
+  color: #999999;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  padding-top: 5px;
+}
+#amazing_part .amazing_body .slider_body .slider_main .slider_item .slider_slide .slider_text span {
+  color: #000;
+  font-size: 25px;
+  font-family: "Kaushan Script", cursive;
+  font-weight: 500;
+  margin-left: 70px;
+  position: relative;
+}
+#amazing_part .amazing_body .slider_body .slider_main .slider_item .slider_slide .slider_text span::after {
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  right: 105px;
+  height: 2px;
+  width: 50px;
+  background-color: #f38181;
+}
+
+/*============================================
+        amazing css part ends here
+==============================================*//*# sourceMappingURL=style.css.map */

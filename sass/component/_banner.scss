@@ -1,0 +1,75 @@
+/*============================================
+        banner css part start here
+==============================================*/
+#banner_part{
+    width: 100%;
+    position: relative;
+    .banner_main{
+        background-image: url(../images/banner.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 800px;
+        .banner_overlay{
+            background: rgb(244,139,130);
+            background: linear-gradient(180deg, rgba(244,139,130,0.695098107602416) 52%, rgba(252,226,137,0.6054622532606793) 93%);
+            height: 100%;
+            .container{
+                .ban_details{
+                    text-align: center;
+                    padding: 230px 0;
+                    .ban_text{
+                        h1{
+                            color: #fff;
+                            font-family: 'Kaushan Script', cursive;
+                            font-size: 52px;
+                            font-weight: 600;
+                            padding-bottom: 40px;
+                        }
+                        h2{
+                            color: #fff;
+                            font-family: 'Montserrat', sans-serif;
+                            text-transform: uppercase;
+                            font-size: 100px;
+                            font-weight: 600;
+                            line-height: 5.5rem;
+                            position: relative;
+                            &::after{
+                                position: absolute;
+                                content: '';
+                                bottom: -20px;
+                                left: 598px;
+                                height: 2px;
+                                width: 100px;
+                                background: #ffff;
+                            }
+                        }
+                    }
+                    .ban_btn{
+                        padding-top: 80px;
+                        a{
+                            text-decoration: none;
+                            color: #ffff;
+                            font-size: 15px;
+                            font-weight: 600;
+                            text-transform: uppercase;
+                            font-family: 'Montserrat', sans-serif;
+                            border: 2px solid #fff;
+                            padding: 10px 20px;
+                            &:hover{
+                                color: #e78282;
+                                background: #fff;
+                                transition-timing-function: ease-in-out;
+                                transition: .5s;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*============================================
+        banner css part ends here
+==============================================*/

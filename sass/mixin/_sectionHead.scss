@@ -1,0 +1,27 @@
+@mixin section_head{
+    text-align: center;
+    h3{
+            color: #000;
+            font-size: 24px;
+            font-family: 'Kaushan Script', cursive;
+            font-weight: 600;
+    } 
+    h2{
+            color: #000;
+            font-size: 35px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            text-transform: uppercase;
+            position: relative;
+            &::after{
+                    position: absolute;
+                    content: '';
+                    top: 70px;
+                    left: 600px;
+                    height: 3px;
+                    width: 100px;
+                    background: #f38181;
+            }
+    } 
+
+}
